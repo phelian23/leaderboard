@@ -1,7 +1,28 @@
-body {
-  background-color: bisque;
+.disflex {
+  display: flex;
 }
 
-.hello {
-    color: red;
+section {
+  width: 25%;
+  margin: 0 10%;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leader-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid;
+}
+
+.list-item p {
+  margin: 4px;
+}
+
+.form {
+  margin-right: 30%;
 }

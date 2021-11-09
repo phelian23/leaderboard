@@ -4,9 +4,11 @@ const addScoresToList = (score) => {
     const listItem = document.createElement('li');
   
     listItem.innerHTML = `
-        <p>${scores.userName}:</p>
-        <p>${scores.score}</p>
+        <p>${score.userName}:</p>
+        <p>${score.score}</p>
         `;
   
     list.appendChild(listItem);
 };
+
+export default addScoresToList;

@@ -1,32 +1,31 @@
-const scores = [
-  {
-    userName: 'Phelian',
-    score: 80,
-  },
-  {
-    userName: 'John',
-    score: 70,
-  },
-  {
-    userName: 'Achebe',
-    score: 20,
-  },
-  {
-    userName: 'Wole',
-    score: 86,
-  },
-  {
-    userName: 'Dupe',
-    score: 34,
-  },
-  {
-    userName: 'Tito',
-    score: 57,
-  },
-  {
-    userName: 'Jumoke',
-    score: 96,
-  },
-];
+import addScoresToList from './addcores.js';
 
-export default scores;
+const baseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/QH8RZRLzI8I3QLPQbGgT/scores/';
+
+const postScores = async () => {
+  const newScore = {
+    user: document.getElementById('user-name').value,
+    score: document.getElementById('user-score').value,
+  };
+
+  (await fetch(baseUrl, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(newScore),
+  })).json();
+};
+
+function displaySores(scores) {
+    scores.forEach((score) => addScoresToList(score));
+  }
+
+const getScores = async () => {
+    const request = await fetch(baseUrl);
+  const scores = await request.json();
+    const scoreList = scores.result;
+    displaySores(scoreList)
+  };
+
+export { getScores, postScores, };

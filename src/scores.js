@@ -19,7 +19,7 @@ const postScores = async () => {
 
 const displaySores = (scores) => {
   scores.forEach((score) => addScoresToList(score));
-}
+};
 
 const getScores = async () => {
   const request = await fetch(baseUrl);

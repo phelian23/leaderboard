@@ -17,7 +17,7 @@ const postScores = async () => {
   })).json();
 };
 
-function displaySores(scores) {
+const displaySores = (scores) => {
   scores.forEach((score) => addScoresToList(score));
 }
 

@@ -5,7 +5,7 @@ const addScoresToList = (score) => {
 
   listItem.innerHTML = `
         <div class="disflex list-item">
-        <p>${score.userName}:</p>
+        <p>${score.user}:</p>
         <p>${score.score}</p>
         </div>
         `;

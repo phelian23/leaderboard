@@ -1,5 +1,5 @@
 import './style.css';
-import { getScores, postScores, } from './scores.js';
+import { getScores, postScores } from './scores.js';
 
 document.getElementById('submit-btn').addEventListener('click', (e) => {
   e.preventDefault();

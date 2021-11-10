@@ -18,14 +18,14 @@ const postScores = async () => {
 };
 
 function displaySores(scores) {
-    scores.forEach((score) => addScoresToList(score));
-  }
+  scores.forEach((score) => addScoresToList(score));
+}
 
 const getScores = async () => {
-    const request = await fetch(baseUrl);
+  const request = await fetch(baseUrl);
   const scores = await request.json();
-    const scoreList = scores.result;
-    displaySores(scoreList)
-  };
+  const scoreList = scores.result;
+  displaySores(scoreList);
+};
 
-export { getScores, postScores, };
+export { getScores, postScores };

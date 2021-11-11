@@ -17,7 +17,7 @@
 - VSCode
 
 ## Application Page url
-
+[Live Demo Link](https://phelian23.github.io/leaderboard/)
 
 ## Getting Started
 

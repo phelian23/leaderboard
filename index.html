@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard App</title>
+<script defer src="/leaderboard/main.js"></script></head>
+<body>
+    <h1>Leaderboard</h1>
+    <main class="disflex">
+        <section>
+            <header class="disflex">
+                <h4>Recent scores</h4>
+                <button type="submit" id="refresh">Refresh</button>
+            </header>
+            <ul class="leader-list">
+            </ul>
+        </section>
+        <form class="form">
+            <h4>Add your score</h4>
+            <input type="text" placeholder="Your name" id="user-name"><br>
+            <input type="text" placeholder="Your score" id="user-score"><br>
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

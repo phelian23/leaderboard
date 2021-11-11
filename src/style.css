@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background: linear-gradient(135deg, rgb(10, 10, 10, 0.8), rgb(206, 70, 20, 0.8)), url('./leader.webp') no-repeat center center / cover;
+  background: linear-gradient(135deg, rgb(10, 10, 10, 0.9), rgb(206, 70, 20, 0.7)), url('./leader.webp') no-repeat center center / cover;
   height: 100vh;
   color: rgb(206, 195, 195);
 }

@@ -25,6 +25,7 @@ const getScores = async () => {
   const request = await fetch(baseUrl);
   const scores = await request.json();
   const scoreList = scores.result;
+  scoreList.sort((a, b) => b.score - a.score);
   displaySores(scoreList);
 };
 

@@ -4,7 +4,7 @@
 
 > Creating an App where scores submitted by different players is displayed. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
-![screenshot]()
+![screenshot](./src/Capture1.PNG)
 
 .
 
